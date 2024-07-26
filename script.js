@@ -73,7 +73,7 @@ window.onload = () => {
        
         
         //TODO: Only allow one decimal for input 
-        let regex  = /[a-zA-Z]|!|@|#|\$|%|\^|&|\*|-|_|\+|=|{|\[|}|]|:|;|"|'|<|,|\?|<|,|>|\/|`|~|\(|\)|\'|\s/g;
+        let regex  = /[a-zA-Z]|!|@|#|\$|%|\^|&|\*|-|_|\+|=|{|\[|}|]|:|;|"|'|<|,|\?|<|,|>|\/|`|~|\(|\)|\'|\s|\"|\`/g;
         if(regex.test(inputText)){
 
 
