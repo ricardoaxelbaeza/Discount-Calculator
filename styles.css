@@ -5,6 +5,7 @@
 :root {
     --grey-black: hsl(0, 0%, 35%);
     --dark-grey: hsl(0, 0%, 20%);
+    --input-background: hsl(0, 0%, 95%);
   }
 
 #title{
@@ -38,10 +39,9 @@ input::-webkit-inner-spin-button {
 #price-input-container{
     width: 200px;
     padding:9px;
-   
     display: flex;
-    border: solid 1px transparent;
-    background-color: hsl(0, 0%, 90%);
+    border: solid 2px transparent;
+    background-color: var(--input-background) ;
     
     border-radius: 50px;
 }
@@ -50,8 +50,8 @@ input::-webkit-inner-spin-button {
     width: 200px;
     padding:9px;
     display: flex;
-    border: solid 1px transparent;
-    background-color: hsl(0, 0%, 90%);
+    border: solid 2px transparent;
+    background-color: var(--input-background);
     border-radius: 50px;
 }
 
@@ -64,7 +64,7 @@ input::-webkit-inner-spin-button {
     border:none;
     outline: none;
     font-size: 17px;
-    color: var(--dark-grey);
+    color: var(--grey-black);
 }
 
 
@@ -78,23 +78,22 @@ input::-webkit-inner-spin-button {
 span{
    padding:5px;
 }
-
-#discount-data{
-    margin-top:30px;
-    max-width: fit-content;
+#discount-data-container{
+    width:380px;
+    height:300px;
     margin-left: auto;
     margin-right: auto;
-    text-align: left;
+    display: block;
+    margin-top:30px;
     padding:10px;
 }
 
 p{
-  
-   font-size: 20px;
-    padding: 5px;
+   font-size: 25px;
+   display: flex;
+padding: 5px;
+
 }
-
-
 
 
 
@@ -107,26 +106,27 @@ p{
 
 #clear-form-btn{
     width: 70px;
-    background-color: hsl(0, 0%, 83%);
+    background-color: hsl(0, 0%, 86%);
 }
 
 #submit-form-btn{
-    background-color: hsl(140, 52%, 55%);
+    background-color: hsl(211, 100%, 49.4%);
     color:white;
 }   
 
 #submit-form-btn:hover{
-    background-color: hsl(140, 52%, 60%);
+    background-color: hsl(211, 100%, 55%);
     cursor: pointer;
 }
 
 #submit-form-btn:active{
-    background-color: hsl(140, 52%, 65%);
+    background-color: hsl(211, 100%, 60%);
 }
 
 .form-btns-container{
     margin-top: 20px;
-    max-width: fit-content;
+    /* max-width: fit-content; */
+    /* position: absolute; */
     margin-left: auto;
     margin-right: auto;
 }
@@ -134,7 +134,7 @@ p{
 
 button{
     padding:5px;
-    border-radius: 10px;
+    border-radius: 20px;
     border:none;
 }
 
@@ -142,23 +142,41 @@ button{
 @media(max-width:858px){
 
     .input-box{
-        width: 130px
+        width: 300px;
+        font-size: 20px;
+        padding-left:10px;
     }
 
     #price-input-container,#percent-input-container{
-        width: 200px;
-        padding:9px;
+        width: 350px;
+        padding:20px;
+
     }
 
-    .input-box{
-        font-size: 17px;
-    }
+
 
     #clear-form-btn,#submit-form-btn{
-        width: 100px;
-        padding: 6px;
-        font-size:18px;
+        width: 160px;
+        padding: 15px;
+        font-size:20px;
+
     }
+
+    .form-btns-container{
+        width:380px;
+        /* background-color: red; */
+        display: flex;
+        /* justify-content: flex-end; */
+    }
+
+   
+
+    p{
+        
+        /* justify-content: center; */
+    }
+
+    
 
 
 

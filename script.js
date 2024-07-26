@@ -11,7 +11,7 @@ window.onload = () => {
     const submitButton = document.getElementById("submit-form-btn");
     const clearFormButton = document.getElementById("clear-form-btn");
 
-    const discountDataDiv = document.getElementById("discount-data");
+    const discountDataDiv = document.getElementById("discount-data-container");
 
 
 
@@ -31,8 +31,8 @@ window.onload = () => {
         priceInput.value="";
         percentInput.value="";
         discountDataDiv.innerHTML=``;
-        priceInputContainer.style.border = " solid 1px transparent";
-        percentInputContainer.style.border = " solid 1px transparent";
+        priceInputContainer.style.border = " solid 2px transparent";
+        percentInputContainer.style.border = " solid 2px transparent";
     });
 
     submitButton.addEventListener("click",(e)=>{
@@ -77,9 +77,9 @@ window.onload = () => {
         if(regex.test(inputText)){
 
 
-            inputContainer.style.border = "solid 1px red";
+            inputContainer.style.border = "solid 2px red";
         }else{
-            inputContainer.style.border = " solid 1px transparent";
+            inputContainer.style.border = " solid 2px transparent";
         }
         let restrictedText = inputText.replace(regex,'');
 
