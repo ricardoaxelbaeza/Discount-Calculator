@@ -7,8 +7,9 @@ window.onload = () => {
     const priceInputContainer = document.getElementById("price-input-container");
     const percentInputContainer = document.getElementById("percent-input-container");
 
-    const clearFormButton = document.getElementById("clear-form-btn");
+    
     const submitButton = document.getElementById("submit-form-btn");
+    const clearFormButton = document.getElementById("clear-form-btn");
 
     const discountDataDiv = document.getElementById("discount-data");
 
