@@ -36,32 +36,34 @@ input::-webkit-inner-spin-button {
 }
 
 #price-input-container{
-    width: 160px;
+    width: 200px;
+    padding:9px;
+   
     display: flex;
     border: solid 1px transparent;
     background-color: hsl(0, 0%, 90%);
-    padding:7px;
+    
     border-radius: 50px;
 }
 
 #percent-input-container{
-    width: 160px;
+    width: 200px;
+    padding:9px;
     display: flex;
     border: solid 1px transparent;
     background-color: hsl(0, 0%, 90%);
-    padding:7px;
     border-radius: 50px;
 }
 
 
 
 .input-box{
-    width: 115px;
+    width: 130px;
     background-color: transparent;
     border-radius: 50px;
     border:none;
     outline: none;
-    font-size: 15px;
+    font-size: 17px;
     color: var(--dark-grey);
 }
 
@@ -82,17 +84,25 @@ span{
     max-width: fit-content;
     margin-left: auto;
     margin-right: auto;
+    text-align: left;
+    padding:10px;
 }
 
 p{
-   position:relative;
-    left:-5px;
+  
+   font-size: 20px;
+    padding: 5px;
 }
 
 
+
+
+
+/* Button Styling */
 #clear-form-btn,#submit-form-btn{
+    width: 100px;
     padding: 6px;
-    font-size:15px;
+    font-size:18px;
 }
 
 #clear-form-btn{
@@ -114,13 +124,7 @@ p{
     background-color: hsl(140, 52%, 65%);
 }
 
-
-
-
-
-
 .form-btns-container{
-  
     margin-top: 20px;
     max-width: fit-content;
     margin-left: auto;
@@ -135,11 +139,29 @@ button{
 }
 
 
+@media(max-width:858px){
+
+    .input-box{
+        width: 130px
+    }
+
+    #price-input-container,#percent-input-container{
+        width: 200px;
+        padding:9px;
+    }
+
+    .input-box{
+        font-size: 17px;
+    }
+
+    #clear-form-btn,#submit-form-btn{
+        width: 100px;
+        padding: 6px;
+        font-size:18px;
+    }
 
 
 
 
-
-.hidden{
-    display: none;
 }
+

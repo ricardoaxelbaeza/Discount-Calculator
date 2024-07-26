@@ -7,9 +7,8 @@ window.onload = () => {
     const priceInputContainer = document.getElementById("price-input-container");
     const percentInputContainer = document.getElementById("percent-input-container");
 
-
-    const submitButton = document.getElementById("submit-form-btn");
     const clearFormButton = document.getElementById("clear-form-btn");
+    const submitButton = document.getElementById("submit-form-btn");
 
     const discountDataDiv = document.getElementById("discount-data");
 
@@ -25,6 +24,15 @@ window.onload = () => {
         //TODO: store input into local storage
     });
 
+
+
+    clearFormButton.addEventListener("click",()=>{
+        priceInput.value="";
+        percentInput.value="";
+        discountDataDiv.innerHTML=``;
+        priceInputContainer.style.border = " solid 1px transparent";
+        percentInputContainer.style.border = " solid 1px transparent";
+    });
 
     submitButton.addEventListener("click",(e)=>{
 
@@ -61,13 +69,13 @@ window.onload = () => {
     function preventSpecialChars(input,inputContainer){
 
         let inputText = input.value;
-        console.log(inputText);
+       
         
         //TODO: Only allow one decimal for input 
-        let regex  = /[a-zA-Z]|!|@|#|\$|%|\^|&|\*|-|_|\+|=|{|\[|}|]|:|;|"|'|<|,|\?|<|,|>|\/|`|~|\(|\)/g;
+        let regex  = /[a-zA-Z]|!|@|#|\$|%|\^|&|\*|-|_|\+|=|{|\[|}|]|:|;|"|'|<|,|\?|<|,|>|\/|`|~|\(|\)|\'|\s/g;
         if(regex.test(inputText)){
-            console.log("match!");
-            
+
+
             inputContainer.style.border = "solid 1px red";
         }else{
             inputContainer.style.border = " solid 1px transparent";
