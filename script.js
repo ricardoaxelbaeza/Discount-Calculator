@@ -1,11 +1,16 @@
 
 window.onload = () => {
     const inputForm = document.getElementById("input-form");
+
     const priceInput = document.getElementById("price-input");
     const percentInput = document.getElementById("percent-input");
+
     const submitButton = document.getElementById("submit-form-btn");
+    const clearFormButton = document.getElementById("clear-form-btn");
 
     const discountDataDiv = document.getElementById("discount-data");
+
+
 
     priceInput.addEventListener("input",()=>{
         preventSpecialChars(priceInput);
@@ -17,20 +22,34 @@ window.onload = () => {
         //TODO: store input into local storage
     });
 
+
     submitButton.addEventListener("click",(e)=>{
-        e.preventDefault();
-        const ogPrice = getOGPrice(priceInput); //gets OG Price as a number (not string)
-        
-        const discountedPrice = calculateDiscount(priceInput,percentInput);
-        const amtSaved = calculateAmtSaved(ogPrice, discountedPrice);
-        
-        
-        const isNum = verifyIfNum(discountedPrice);
 
-        if(isNum){
-            displayDiscountedPrice(discountedPrice,amtSaved);
+            //checks for required fields before submission, bc without if stmt prevent default in "else" does not check required fields
+            if(priceInput.checkValidity()===false){
+                priceInput.reportValidity();
+            }else if (percentInput.checkValidity()===false) {
+                percentInput.reportValidity();
+            } else {
 
-        }
+                e.preventDefault(); //prevents refresh
+        
+        
+                const ogPrice = getOGPrice(priceInput); //gets OG Price as a number (not string)
+                const discountedPrice = calculateDiscount(priceInput,percentInput);
+                const amtSaved = calculateAmtSaved(ogPrice, discountedPrice);
+                const isNum = verifyIfNum(discountedPrice);
+        
+                if(isNum){
+                    displayDiscountedPrice(discountedPrice,amtSaved);
+                }
+        
+                
+            }
+
+               
+            
+        
         //TODO: Display Amount Saved in Text on HTML DOC & Display Other Messages as needed (e.g. NaN)
         //      Catch Errors, account for NaN
     });
