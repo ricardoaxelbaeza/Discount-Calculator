@@ -39,10 +39,19 @@ window.onload = () => {
     function preventSpecialChars(input){
 
         let inputText = input.value;
+        console.log(inputText);
         
         //TODO: Only allow one decimal for input 
-        var regex  = /[a-zA-Z]|!|@|#|\$|%|\^|&|\*|-|_|\+|=|{|\[|}|]|:|;|"|'|<|,|\?|<|,|>|\/|`|~|\(|\)/g;
+        let regex  = /[a-zA-Z]|!|@|#|\$|%|\^|&|\*|-|_|\+|=|{|\[|}|]|:|;|"|'|<|,|\?|<|,|>|\/|`|~|\(|\)/g;
+        if(regex.test(inputText)){
+            console.log("match!");
+            input.style.borderColor = "red";
+        }else{
+            input.style.borderColor = "black";
+        }
         let restrictedText = inputText.replace(regex,'');
+
+       
 
         input.value = restrictedText;
 

@@ -6,18 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="styles.css" rel="stylesheet"></link>
-    
+    <script src="https://kit.fontawesome.com/313be08ef6.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
     <div id="calculator">
         <form id="input-form">
-          <label>Original Price: <input required id="price-input"></input></label>
-          <label>Discount Percentage: <input required id="percent-input"></input></label>
-          <button id="submit-form-btn" type="submit">Calculate</button>
+
+            <div id="input-boxes-container">
+                <i class="fa-solid fa-dollar-sign"></i>
+                <input required class="input-box" id="price-input" placeholder="Original Price"></input>
+                <div id="space"></div>
+                <i class="fa-solid fa-percent"></i>
+                <input required class="input-box" id="percent-input" placeholder="Discount Percent"></input>
+            </div>
+
+            <div id="form-btns-container">
+                <button id="clear-form-btn" >Clear</button>
+                <button id="submit-form-btn" type="submit">Calculate</button>
+            </div>
+
+            
+
         </form>
         <div id="discount-data">
-            
         </div>
     </div>
     
