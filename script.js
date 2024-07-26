@@ -33,6 +33,7 @@ window.onload = () => {
         discountDataDiv.innerHTML=``;
         priceInputContainer.style.border = " solid 2px transparent";
         percentInputContainer.style.border = " solid 2px transparent";
+        discountDataDiv.style.backgroundColor = "";
     });
 
     submitButton.addEventListener("click",(e)=>{
@@ -116,9 +117,15 @@ window.onload = () => {
     function displayDiscountedPrice(discountedPrice,amtSaved){
 
         discountDataDiv.innerHTML = `
-            <p>Discount Price: $${discountedPrice}</p>
-            <p>You Saved: $${amtSaved}</p>
+            <div id="discount-text-container">
+                <p >Discount Price: $${discountedPrice}</p>
+                <p>You Saved: $${amtSaved}</p>
+            </div>
         `;
+
+        discountDataDiv.style.backgroundColor = "var(--discount-container-bckgnd)";
+
+
     }
 
 }
