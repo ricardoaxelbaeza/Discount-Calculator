@@ -4,6 +4,9 @@ window.onload = () => {
 
     const priceInput = document.getElementById("price-input");
     const percentInput = document.getElementById("percent-input");
+    const priceInputContainer = document.getElementById("price-input-container");
+    const percentInputContainer = document.getElementById("percent-input-container");
+
 
     const submitButton = document.getElementById("submit-form-btn");
     const clearFormButton = document.getElementById("clear-form-btn");
@@ -13,12 +16,12 @@ window.onload = () => {
 
 
     priceInput.addEventListener("input",()=>{
-        preventSpecialChars(priceInput);
+        preventSpecialChars(priceInput,priceInputContainer);
         //TODO: store input into local storage
     });
 
     percentInput.addEventListener("input",()=>{
-        preventSpecialChars(percentInput);
+        preventSpecialChars(percentInput,percentInputContainer);
         //TODO: store input into local storage
     });
 
@@ -55,7 +58,7 @@ window.onload = () => {
     });
  
     //Checks input typed (does not allow letters to be typed in)
-    function preventSpecialChars(input){
+    function preventSpecialChars(input,inputContainer){
 
         let inputText = input.value;
         console.log(inputText);
@@ -64,9 +67,10 @@ window.onload = () => {
         let regex  = /[a-zA-Z]|!|@|#|\$|%|\^|&|\*|-|_|\+|=|{|\[|}|]|:|;|"|'|<|,|\?|<|,|>|\/|`|~|\(|\)/g;
         if(regex.test(inputText)){
             console.log("match!");
-            input.style.borderColor = "red";
+            
+            inputContainer.style.border = "solid 1px red";
         }else{
-            input.style.borderColor = "black";
+            inputContainer.style.border = " solid 1px transparent";
         }
         let restrictedText = inputText.replace(regex,'');
 

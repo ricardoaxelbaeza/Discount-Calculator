@@ -6,29 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="styles.css" rel="stylesheet"></link>
+    <link rel="preload" as="style" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
     <script src="https://kit.fontawesome.com/313be08ef6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
 
     <div id="calculator">
+        <h1 id="title">Discount Calculator</h1>
         <form id="input-form">
-
             <div id="input-boxes-container">
-                <i class="fa-solid fa-dollar-sign"></i>
-                <input required class="input-box" id="price-input" name="Origianl Price" placeholder="Original Price"></input>
+                <div id="price-input-container">
+                    <i class="material-symbols-outlined">attach_money</i>
+                    <input required class="input-box" id="price-input" name="Origianl Price" placeholder="Original Price"></input>
+                </div>
+                
                 <div id="space"></div>
-                <i class="fa-solid fa-percent"></i>
-                <input required class="input-box" id="percent-input" name="Discount Percent" placeholder="Discount Percent"></input>
+                <div id="percent-input-container">
+                        <i class="material-symbols-outlined percent-icon">percent</i>
+                        <input required class="input-box" id="percent-input" name="Discount Percent" placeholder="Discount Percent"></input>
+                </div>
+                
+                
             </div>
 
-            <div id="form-btns-container">
+            <div class="form-btns-container">
                 <button id="clear-form-btn" >Clear</button>
+                <span></span>
                 <button id="submit-form-btn" type="button">Calculate</button>
             </div>
-
-            
-
         </form>
+
         <div id="discount-data">
         </div>
     </div>
