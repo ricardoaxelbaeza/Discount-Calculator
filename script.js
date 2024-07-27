@@ -77,7 +77,7 @@ window.onload = () => {
         
         //TODO: Only allow one decimal for input 
         let regex  = /[a-zA-Z]|!|@|#|\$|%|\^|&|\*|-|_|\+|=|{|\[|}|]|:|;|"|'|<|,|\?|<|,|>|\/|`|~|\(|\)|\'|\s|\"|\`/g;
-        if(regex.test(inputText)){
+        if(isNaN(inputText)){
 
 
             inputContainer.style.border = "solid 2px red";
