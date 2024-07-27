@@ -1,0 +1,33 @@
+#discount-data-container{
+    width:380px;
+    height:90px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top:30px;
+    padding:10px;
+    border-radius: 30px;
+}
+
+#discount-text-container{
+    margin-top:10px;
+    padding-left: 15px;
+    
+}
+
+p{
+    font-size: 20px;
+    color: var(--dark-grey);
+    font-weight:lighter;
+    display: flex;
+    padding: 5px;
+ 
+ }
+
+ @media(max-width:858px){
+    p{
+        
+        /* justify-content: center; */
+    }
+
+}

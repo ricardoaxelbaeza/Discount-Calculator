@@ -1,0 +1,58 @@
+#input-boxes-container{
+    margin-top:30px;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#price-input-container{
+    width: 200px;
+    padding:9px;
+    display: flex;
+    border: solid 2px transparent;
+    background-color: var(--input-background) ;
+    
+    border-radius: 50px;
+}
+
+#percent-input-container{
+    width: 200px;
+    padding:9px;
+    display: flex;
+    border: solid 2px transparent;
+    background-color: var(--input-background);
+    border-radius: 50px;
+}
+
+
+
+.input-box{
+    width: 130px;
+    background-color: transparent;
+    border-radius: 50px;
+    border:none;
+    outline: none;
+    font-size: 17px;
+    color: var(--grey-black);
+}
+
+
+@media(max-width:858px){
+
+    .input-box{
+        width: 300px;
+        font-size: 20px;
+        padding-left:10px;
+    }
+
+    #price-input-container,#percent-input-container{
+        width: 350px;
+        padding:20px;
+
+    }
+
+    #input-boxes-container{
+        margin-top:15px;
+       
+    }
+}
