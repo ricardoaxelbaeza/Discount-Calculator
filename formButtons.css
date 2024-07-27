@@ -17,6 +17,7 @@
 
 #clear-form-btn:active{
     background-color: hsl(0, 0%, 95%);
+    /* color:var(--grey-black); */
 }
 
 #submit-form-btn{

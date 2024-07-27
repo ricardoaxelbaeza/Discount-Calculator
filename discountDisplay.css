@@ -19,30 +19,15 @@
 }
 
 #discount-text-container{
-    margin-top: 10px;
+    margin-top: 5px;
     padding:15px;
     border: 1px solid var(--container-border);
     border-radius: 15px;
 }
 
-
-/* #discount-text-container{
-    padding-left: 15px;
-    position: relative;
-}
-
-
 #discount-txt{
-    margin-left: 10px;
-    font-size: 18px;
     color: var(--dark-grey);
-    font-weight:lighter;
-    display: flex;
-    padding: 5px;
-    position: relative;
-    top:8px;
- 
- } */
+ } 
 
  @media(max-width:858px){
     p{
