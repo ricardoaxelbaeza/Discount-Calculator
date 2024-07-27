@@ -8,6 +8,7 @@
 #clear-form-btn{
     width: 70px;
     background-color: hsl(0, 0%, 85%);
+    color: hsl(211, 100%, 49.4%);
 }
 
 #clear-form-btn:hover{

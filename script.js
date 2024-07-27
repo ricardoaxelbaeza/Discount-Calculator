@@ -13,6 +13,8 @@ window.onload = () => {
 
     const discountDataDiv = document.getElementById("discount-data-container");
 
+    
+
 
 
     priceInput.addEventListener("input",()=>{
@@ -117,13 +119,20 @@ window.onload = () => {
     function displayDiscountedPrice(discountedPrice,amtSaved){
 
         discountDataDiv.innerHTML = `
-            <div id="discount-text-container">
-                <p >Discount Price: $${discountedPrice}</p>
-                <p>You Saved: $${amtSaved}</p>
-            </div>
+
+                <div id="result-text-container">
+                    <p id="result-text">Result</p>
+                </div>
+                <div id="discount-text-container">
+                    <p id="discount-txt">Discount Price: $${discountedPrice}</p>
+                    <p id="discount-txt">You Saved: $${amtSaved}</p>
+                </div>
+
         `;
 
-        discountDataDiv.style.backgroundColor = "var(--discount-container-bckgnd)";
+        // discountDataDiv.style.border="1px solid var(--container-border)";
+
+        
 
 
     }

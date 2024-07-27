@@ -8,7 +8,8 @@
     --dark-grey: hsl(0, 0%, 20%);
     --input-background: hsl(0, 0%, 95%);
     --discount-container-bckgnd: hsl(0, 0%, 93%);
-    
+    --container-border:hsl(0, 0%, 80%);
+    --green-theme: hsl(140, 52%, 55%);
   }
 
 #title{
@@ -46,7 +47,7 @@ input::-webkit-inner-spin-button {
     font-size: 60px;
     font-weight: bold;
     font-family:"Roboto";
-    color:hsl(140, 52%, 55%);
+    color:var(--green-theme);
     padding-left: 20px;
 }
 
