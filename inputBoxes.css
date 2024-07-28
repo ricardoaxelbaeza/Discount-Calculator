@@ -1,13 +1,13 @@
 #input-boxes-container{
-    margin-top:30px;
+    margin-top:5px;
     max-width: fit-content;
     margin-left: auto;
     margin-right: auto;
 }
 
 #price-input-container{
-    width: 200px;
-    padding:9px;
+    width: 350x;
+    padding:20px;
     display: flex;
     border: solid 2px transparent;
     background-color: var(--input-background) ;
@@ -16,8 +16,8 @@
 }
 
 #percent-input-container{
-    width: 200px;
-    padding:9px;
+    width: 350px;
+    padding:20px;
     display: flex;
     border: solid 2px transparent;
     background-color: var(--input-background);
@@ -27,12 +27,12 @@
 
 
 .input-box{
-    width: 130px;
+    width: 300px;
     background-color: transparent;
     border-radius: 50px;
     border:none;
     outline: none;
-    font-size: 17px;
+    font-size: 20px;
     color: var(--grey-black);
 }
 
