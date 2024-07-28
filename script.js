@@ -1,21 +1,34 @@
 
 window.onload = () => {
     const inputForm = document.getElementById("input-form");
+    const hamburgerIcon = document.getElementById("hamburger-icon");
+    
+    const webPageBody = document.getElementById("calculator");
+
 
     const priceInput = document.getElementById("price-input");
     const percentInput = document.getElementById("percent-input");
     const priceInputContainer = document.getElementById("price-input-container");
     const percentInputContainer = document.getElementById("percent-input-container");
 
+
     
     const submitButton = document.getElementById("submit-form-btn");
     const clearFormButton = document.getElementById("clear-form-btn");
 
     const discountDataDiv = document.getElementById("discount-data-container");
-
     
+    webPageBody.addEventListener("click",()=>{
+        if(hamburgerIcon.classList.contains('open')){
+            hamburgerIcon.classList.remove('open');
+        }
+    });
 
 
+    hamburgerIcon.addEventListener("click",(menu)=>{
+        console.log("HI");
+        toggleMobileMenu(hamburgerIcon);
+    });    
 
     priceInput.addEventListener("input",()=>{
         preventSpecialChars(priceInput,priceInputContainer);
@@ -132,10 +145,13 @@ window.onload = () => {
 
         // discountDataDiv.style.border="1px solid var(--container-border)";
 
-        
-
-
     }
+
+    function toggleMobileMenu(menu){
+        menu.classList.toggle('open');
+    }
+
+    
 
 }
     

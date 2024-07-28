@@ -13,8 +13,11 @@
   }
 
 #title{
-    margin-top:80px;
     text-align: center;
+}
+
+#title-container{
+    margin-top: 80px;
 }
 
 
@@ -29,6 +32,10 @@ input::-webkit-inner-spin-button {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+#divvy{
+    height: 100vh;
+}
+
 #space{
     padding:5px;
 }
@@ -41,6 +48,7 @@ input::-webkit-inner-spin-button {
     margin-right:auto;
 }
 
+
 #title{
     /* word-wrap: break-word; */
     display: flex;
@@ -49,6 +57,7 @@ input::-webkit-inner-spin-button {
     font-family:"Roboto";
     color:var(--green-theme);
     padding-left: 20px;
+    /* transition: 1s; */
 }
 
 #calc-text{
