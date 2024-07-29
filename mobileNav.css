@@ -28,24 +28,48 @@
 }
 
 .open .mobile-menu{
+ 
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; 
     justify-content: flex-start;
-    /* background-color: red; */
+    align-items: flex-start; 
+    
 }
 
 .mobile-menu{
+    border-top-width: 60px;
+    border-top-style: solid;
+    border-top-color: transparent;
+
+    border-left-width: 20px;
+    border-left-style: solid;
+    border-left-color: transparent;
+
     display: none;
     position: absolute;
     z-index: 1;
     top:50px;
     right:0;
-    height: calc(100vh );
+    height: calc(100vh);
     margin-top: 10px;
     width:60%;
-    background-color: blue;
+    background-color: var(--discount-container-bckgnd);
+    color: var(--grey-black);
+    font-size: 20px;
+    font-weight:bold;
 }
+
+
+.ham-li{
+    padding-top:20px;
+}
+
+.ham-anchor{
+    text-decoration: none;
+    color: var(--grey-black);
+}
+
 
 @media only screen and (max-width:600px) {
     #hamburger-icon{

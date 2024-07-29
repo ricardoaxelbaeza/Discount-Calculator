@@ -12,14 +12,13 @@
     --green-theme: hsl(140, 52%, 55%);
   }
 
+body{
+    height: 100vh;
+}
+
 #title{
     text-align: center;
 }
-
-#title-container{
-    margin-top: 80px;
-}
-
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -30,6 +29,10 @@ input::-webkit-inner-spin-button {
     margin:0;
     padding:0;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+#top-space{
+    padding:80px;
 }
 
 #divvy{
