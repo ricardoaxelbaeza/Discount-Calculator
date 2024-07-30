@@ -45,8 +45,8 @@
     visibility:hidden;
     position: absolute;
     z-index: 1;
-    right:-500;
     height: 100vh;
+    right:0;
     width:60%;
     background-color: white;
     border-bottom-left-radius: 30px;
