@@ -2,6 +2,7 @@
 window.onload = () => {
     const inputForm = document.getElementById("input-form");
     const hamburgerIcon = document.getElementById("hamburger-icon");
+    const mobileNavMenu = document.getElementById("mobile-nav");
     
     const webPageBody = document.getElementById("calculator");
 
@@ -19,15 +20,14 @@ window.onload = () => {
     const discountDataDiv = document.getElementById("discount-data-container");
     
     webPageBody.addEventListener("click",()=>{
-        if(hamburgerIcon.classList.contains('open')){
-            hamburgerIcon.classList.remove('open');
+        if(mobileNavMenu.classList.contains('open')){
+            mobileNavMenu.classList.remove('open');
         }
     });
 
 
     hamburgerIcon.addEventListener("click",(menu)=>{
-        console.log("HI");
-        toggleMobileMenu(hamburgerIcon);
+        toggleMobileMenu(mobileNavMenu);
     });    
 
     priceInput.addEventListener("input",()=>{

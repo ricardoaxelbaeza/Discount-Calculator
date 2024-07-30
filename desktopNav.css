@@ -3,7 +3,7 @@ header{
     display: flex;
     height:60px;
     justify-content: space-between;
-    border-bottom: solid var(--discount-container-bckgnd);
+    /* border-bottom: solid var(--discount-container-bckgnd); */
 }
 
 
@@ -12,7 +12,7 @@ header{
     align-items: center;
 }
 
-ul{
+#desktop-list-container{
     list-style: none;
     height: 100%;
     display: flex;
@@ -20,16 +20,17 @@ ul{
     justify-content: space-around;
 }
 
-ul a{
-    color:(--dark-grey);
+.desktop-anchor{
+    color:var(--dark-grey);
 }
 
-ul li{
+.desktop-li{
     padding: 5px;
     margin-left: 10px;
 }
 
-ul li:hover{
+.desktop-li:hover{
+    cursor: pointer;
     transform: scale(1.1);
     transition: 0.3;
 }
@@ -44,7 +45,7 @@ ul li:hover{
 }
 
 @media only screen and (min-width:600px) {
-    #hamburger-icon{
+    #mobile-nav{
         display: none;
     }
     

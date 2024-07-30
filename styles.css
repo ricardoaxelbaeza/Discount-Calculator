@@ -12,13 +12,11 @@
     --green-theme: hsl(140, 52%, 55%);
   }
 
-body{
-    height: 100vh;
-}
 
 #title{
     text-align: center;
 }
+
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
