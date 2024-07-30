@@ -55,7 +55,7 @@ input::-webkit-inner-spin-button {
     display: flex;
     font-size: 60px;
     font-weight: bold;
-    font-family:"Roboto";
+    /* font-family:"Roboto"; */
     color:var(--green-theme);
     padding-left: 20px;
     /* transition: 1s; */
@@ -65,7 +65,7 @@ input::-webkit-inner-spin-button {
     position: relative;
     top:-15px;
     font-weight: bold;
-    font-family:"Roboto";
+    /* font-family:"Roboto"; */
     font-size: 60px;
     padding-left: 20px;
 }
