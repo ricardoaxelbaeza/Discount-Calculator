@@ -6,10 +6,15 @@
 :root {
     --grey-black: hsl(0, 0%, 35%);
     --dark-grey: hsl(0, 0%, 20%);
-    --input-background: hsl(0, 0%, 95%);
+    --input-background: hsl(0, 0%, 97%);
     --discount-container-bckgnd: hsl(0, 0%, 93%);
     --container-border:hsl(0, 0%, 80%);
-    --green-theme: hsl(140, 52%, 55%);
+    --green-theme: #51c878;
+    --blue-theme: #0079fa;
+  }
+
+  body{
+   
   }
 
 
@@ -55,8 +60,10 @@ input::-webkit-inner-spin-button {
     display: flex;
     font-size: 60px;
     font-weight: bold;
-    /* font-family:"Roboto"; */
-    color:var(--green-theme);
+    font-family:"Roboto";
+    background: -webkit-linear-gradient(#249dc0 15%, #45bc8c, #49c085);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     padding-left: 20px;
     /* transition: 1s; */
 }
@@ -65,9 +72,10 @@ input::-webkit-inner-spin-button {
     position: relative;
     top:-15px;
     font-weight: bold;
-    /* font-family:"Roboto"; */
+    font-family: Roboto;
     font-size: 60px;
     padding-left: 20px;
+    color:var(--dark-grey);
 }
 
 .input-logo{

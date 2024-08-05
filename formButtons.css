@@ -1,29 +1,29 @@
 /* Button Styling */
 #clear-form-btn,#submit-form-btn{
-    width: 100px;
-    padding: 6px;
-    font-size:18px;
+    transition: all 0.5s ease;
+    width: 160px;
+    padding: 15px;
+    font-size:20px;
 }
 
 #clear-form-btn{
-    width: 160px;
-    padding: 15px;
-    background-color: hsl(0, 0%, 85%);
+    background-color: transparent;
+    border: 2px solid  hsl(211, 100%, 49.4%);
     color: hsl(211, 100%, 49.4%);
 }
 
 #clear-form-btn:hover{
-    background-color: hsl(0, 0%, 90%);
+    background-color:  hsl(211, 100%, 49.4%);;
+    color:white;
 }
 
 #clear-form-btn:active{
-    background-color: hsl(0, 0%, 95%);
-    /* color:var(--grey-black); */
+    background-color:  hsl(211, 100%, 55%);;
+    color:white;
 }
 
 #submit-form-btn{
-    width: 160px;
-    padding: 15px;
+    padding: 17px;
     background-color: hsl(211, 100%, 49.4%);
     color:white;
 }   
@@ -47,8 +47,8 @@
 
 
 button{
-    padding:5px;
-    border-radius: 20px;
+    /* padding:5px; */
+    border-radius: 30px;
     border:none;
 }
 

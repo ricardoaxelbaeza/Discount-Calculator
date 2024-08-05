@@ -19,6 +19,9 @@ window.onload = () => {
 
     const discountDataDiv = document.getElementById("discount-data-container");
     
+
+    
+
     webPageBody.addEventListener("click",()=>{
         if(mobileNavMenu.classList.contains('open')){
             mobileNavMenu.classList.remove('open');
@@ -36,7 +39,8 @@ window.onload = () => {
     });
 
     percentInput.addEventListener("input",()=>{
-        preventSpecialChars(percentInput,percentInputContainer);
+        // preventSpecialChars(percentInput,percentInputContainer);
+        submitAnimation(priceInput,percentInput,submitButton);
         //TODO: store input into local storage
     });
 
@@ -136,9 +140,13 @@ window.onload = () => {
                 <div id="result-text-container">
                     <p id="result-text">Result</p>
                 </div>
-                <div id="discount-text-container">
-                    <p id="discount-txt">Discount Price: $${discountedPrice}</p>
-                    <p id="discount-txt">You Saved: $${amtSaved}</p>
+                <div class="discount-text-container">
+                    <p class="money-amt" id="new-price">$${discountedPrice}</p>
+                    <p class="discount-sub-txt" id="new-price-txt">New <mark class="blue-theme">discounted</mark> price.</p>
+                </div>
+                <div class="discount-text-container">
+                    <p class="money-amt" id="amt-saved">$${amtSaved}</p>
+                    <p class="discount-sub-txt" id="amt-saved-txt">Your discount <mark class="green-theme">savings</mark>.</p>
                 </div>
 
         `;
@@ -149,6 +157,15 @@ window.onload = () => {
 
     function toggleMobileMenu(menu){
         menu.classList.toggle('open');
+    }
+
+    function submitAnimation(priceInput,percentInput,submitButton){
+       
+       if(priceInput.value !== "" && percentInput.value >= 5){
+        const ogBtnWidth = submitButton.style.width;
+        submitButton.style.width = "190px";
+        setTimeout(() => {  submitButton.style.width = ogBtnWidth; }, 500);
+       }
     }
 
     
