@@ -40,6 +40,19 @@
     padding-left:10px;
 }
 
+#percent-select{
+    border-radius: 50px;
+    width:50px;
+}
+
+select{
+    
+    background-color: var(--input-background);
+    border:none;
+}
+
+
+
 
 @media(max-width:858px){
 
