@@ -4,7 +4,7 @@
     margin-left: auto;
     margin-right: auto;
     display: block;
-    margin-top:80px;
+    margin-top:50px;
     padding:10px;
 }
 
@@ -20,7 +20,7 @@
 
 .discount-text-container{
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     padding:20px 20px 10px 20px;
     box-shadow: 0 4px 8px 0 rgba(196, 192, 192, 0.434), 0 6px 20px 0 rgba(196, 192, 192, 0.434);
     border-radius: 15px;
