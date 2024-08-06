@@ -7,6 +7,7 @@ priceInput.addEventListener("input",()=>{
 percentInput.addEventListener("input",()=>{
     // preventSpecialChars(percentInput,percentInputContainer);
     submitAnimation(priceInput,percentInput,submitButton);
+    dropMenuValueCheck();
     //TODO: store input into local storage
 });
 
@@ -41,4 +42,10 @@ function submitAnimation(priceInput,percentInput,submitButton){
 
     input.value = restrictedText;
 
+}
+
+function dropMenuValueCheck(){
+    if(percentDropDownMenu.value !== percentInput.value){
+        percentDropDownMenu.value = "";
+    }
 }

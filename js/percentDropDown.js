@@ -1,5 +1,4 @@
 
-
 const percentDropDownMenu = document.getElementById("percent-select");
 
 const option0 = document.getElementById("option-0");
@@ -9,9 +8,10 @@ const option3 = document.getElementById("option-3");
 const option4 = document.getElementById("option-4");
 
 percentDropDownMenu.addEventListener('change',()=>{
-    var value = percentDropDownMenu.value;
-    percentInput.value = value;
+    percentInput.value = percentDropDownMenu.value;
 });
+
+
 
 
 
