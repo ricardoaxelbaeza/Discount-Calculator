@@ -8,4 +8,5 @@ clearFormButton.addEventListener("click",()=>{
     priceInputContainer.style.border = " solid 2px transparent";
     percentInputContainer.style.border = " solid 2px transparent";
     discountDataDiv.style.backgroundColor = "";
+    percentDropDownMenu.value = "";
 });

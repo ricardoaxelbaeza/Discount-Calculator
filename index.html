@@ -6,6 +6,7 @@
     <script src="js/submit.js" defer></script>
     <script src="js/clear.js" defer></script>
     <script src="js/input.js" defer></script>
+    <script src="js/percentDropDown.js" defer></script>
   
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,6 +18,7 @@
     <link href="css/inputBoxes.css" rel="stylesheet"></link>
     <link href="css/formButtons.css" rel="stylesheet"></link>
     <link href="css/discountDisplay.css" rel="stylesheet"></link>
+    <link href="css/percentDropDown.css" rel="stylesheet"></link>
 
     
     
@@ -84,11 +86,11 @@
                         <i class="material-symbols-outlined percent-icon input-logo">percent</i>
                         <input required class="input-box" id="percent-input" name="Discount Percent" placeholder="Discount Percent" type="number" pattern="[0-9]*" inputmode="decimal" step="0.01"></input>
                         <select id="percent-select">     
-                            <option value=""></option>
-                            <option value="15">15%</option>
-                            <option value="25">25%</option>
-                            <option value="50">50%</option>
-                            <option value="75">75%</option>
+                            <option id="option-0" value=""></option>
+                            <option id="option-1" value="15">15%</option>
+                            <option id="option-2" value="25">25%</option>
+                            <option id="option-3" value="50">50%</option>
+                            <option id="option-4" value="75">75%</option>
                         </select>
                 </div>
                 
