@@ -29,19 +29,20 @@
 }
 
 #discountPriceContainer{
-    animation: scroll-fade 1s backwards;
+    animation: bubbly-pop 1s backwards;
     animation-delay: 0.1s;
 }
 
 #amountSavedContainer{
-    animation: scroll-fade 1s backwards;
+    animation: bubbly-pop 1s backwards;
     animation-delay: 0.4s;
 }
 
-@keyframes scroll-fade {
+@keyframes bubbly-pop {
     0%{
         
-        will-change: opacity;
+        will-change: opacity scale;
+        scale:1;
         opacity:0;
     }
 
