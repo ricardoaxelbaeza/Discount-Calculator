@@ -47,6 +47,7 @@
     height: 100vh;
     z-index: 1;
     margin-top: 2px;
+    overflow-y: hidden;
     right:0;
     width:60%;
     background-color: white;
