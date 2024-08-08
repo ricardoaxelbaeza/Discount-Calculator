@@ -44,9 +44,9 @@
 .mobile-menu{
     visibility:hidden;
     position: absolute;
-    
+    height: 93%;
     z-index: 1;
-    height: 100vh;
+    margin-top: 2px;
     right:0;
     width:60%;
     background-color: white;
