@@ -89,7 +89,7 @@
     opacity: 1;
     visibility: visible;
     background: rgba(232,232,237,.4);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(20px);
     
     visibility: hidden;
 }
