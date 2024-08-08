@@ -2,10 +2,60 @@
 
 
 #percent-select{
-    background-color:white;
-    width: 60px;
+    user-select: none; 
+    background-color: var(--input-background);
+    color:var(--dark-grey);
+    font-size: 12px;
+    height:24px;
+    padding: 0 0 0 10px;
+    border:0;
+    width: 65px;
+    outline-width: 0;
+    outline: none;
+    -webkit-appearance: none;
 }
 
 option{
     padding: 10px;
+}
+
+.custom-select{
+    position: relative;
+
+}
+
+.custom-arrow{
+    position: absolute;
+    top:0;
+    right:5%;
+    display: block;
+    background-color:hsl(0, 0%, 92%);
+    height:14px;
+    width:15px;
+    pointer-events: none;
+    border-radius: 30px;
+}
+
+.custom-arrow::before,.custom-arrow::after{
+    --size:4.5px;
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    right:33%;
+    transform: translateX(-50%,-50%);
+}
+
+.custom-arrow::before{
+    border-left: var(--size) solid transparent;
+    border-right: var(--size) solid transparent;
+    border-bottom: var(--size) solid var(--dark-grey);
+    top:25%;
+}
+
+.custom-arrow::after{
+    border-left: var(--size) solid transparent;
+    border-right: var(--size) solid transparent;
+    border-top: var(--size) solid var(--dark-grey);
+    top:55%;
 }
