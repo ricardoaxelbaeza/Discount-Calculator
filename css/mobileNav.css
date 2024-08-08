@@ -44,7 +44,7 @@
 .mobile-menu{
     visibility:hidden;
     position: absolute;
-    height: 95vh;
+    height: 100vh;
     z-index: 1;
     margin-top: 2px;
     right:0;
