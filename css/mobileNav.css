@@ -32,10 +32,10 @@
     visibility:visible;
     right:0;
     transition: ease-in;
-    animation: fadeIn 0.3s;
+    animation: slide 0.4s;
 }
 
-@keyframes fadeIn {
+@keyframes slide {
     0% { opacity: 0; 
         transform: translateX(100%);
     }
@@ -44,9 +44,8 @@
     }
   }
 
-
-
 .mobile-menu{
+     /* animation: slide 0.4s; */
     visibility:hidden;
     position: absolute;
     overflow: hidden;
@@ -99,6 +98,7 @@
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     visibility: hidden;
+    /* animation: slide 4s; */
 }
 
 
