@@ -70,11 +70,11 @@ function displayDiscountedPrice(discountedPrice,amtSaved){
             <div id="result-text-container">
                 <p id="result-text">Result</p>
             </div>
-            <div class="discount-text-container">
+            <div class="discount-text-container" id="discountPriceContainer">
                 <p class="money-amt" id="new-price">$${discountedPrice}</p>
                 <p class="discount-sub-txt" id="new-price-txt">New <mark class="blue-theme">discounted</mark> price.</p>
             </div>
-            <div class="discount-text-container">
+            <div class="discount-text-container" id="amountSavedContainer">
                 <p class="money-amt" id="amt-saved">$${amtSaved}</p>
                 <p class="discount-sub-txt" id="amt-saved-txt">Your discount <mark class="green-theme">savings</mark>.</p>
             </div>

@@ -25,20 +25,35 @@
     box-shadow: 0 4px 8px 0 rgba(196, 192, 192, 0.434), 0 6px 20px 0 rgba(196, 192, 192, 0.434);
     border-radius: 15px;
     background-color: white;
-    animation: scroll-fade 1s;
-    animation-duration: 1;
+    transition-delay: 5s;
+}
+
+#discountPriceContainer{
+    animation: scroll-fade 1s backwards;
+    animation-delay: 0.1s;
+}
+
+#amountSavedContainer{
+    animation: scroll-fade 1s backwards;
+    animation-delay: 0.4s;
 }
 
 @keyframes scroll-fade {
-    from{
+    0%{
+        
         will-change: opacity, transform;
         opacity:0;
-        transform: translateY(4vh);
+        /* transform: translateY(4vh); */
+       
     }
 
-    to{
+    50%{
         will-change: opacity, transform;
-        opacity: 1;  transform:0;
+        opacity: 0.5;  transform:0; scale:1.2;
+    }
+
+    100%{
+        scale: 1; transform:0; opacity: 1;
     }
 }
 
