@@ -66,6 +66,7 @@ input::-webkit-inner-spin-button {
 
 #calc-text{
     position: relative;
+    z-index:-1;
     top:-15px;
     font-weight: 600;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
