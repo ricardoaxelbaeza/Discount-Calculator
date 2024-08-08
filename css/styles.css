@@ -14,7 +14,7 @@
   }
 
   body{
-   height: 100vh;
+   height: 100;
   }
 
 
@@ -38,9 +38,6 @@ input::-webkit-inner-spin-button {
     padding:70px;
 }
 
-#divvy{
-    height: 100vh;
-}
 
 #space{
     padding:5px;
