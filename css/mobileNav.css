@@ -112,3 +112,11 @@
 }
 
 
+@media(max-width:400px){
+
+    .mobile-menu{
+        overflow: hidden;
+    }
+}
+
+

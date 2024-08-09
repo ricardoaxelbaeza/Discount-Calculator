@@ -66,3 +66,22 @@ button{
         /* justify-content: flex-end; */
     }
 }
+
+
+@media(max-width:400px){
+    #clear-form-btn,#submit-form-btn{
+        width: 133.3px;
+        padding: 12.49px;
+        font-size:16.66px;
+    }
+
+    .form-btns-container{
+        margin-top: 20px;
+        width:316.54px;
+        /* background-color: red; */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+}

@@ -97,3 +97,30 @@
     }
 
 }
+
+@media(max-width:400px){
+    #discount-data-container{
+        width:316.5px;
+        height:66.6px;
+    }
+
+    #result-text-container{
+        /* background-color: blue; */
+        padding-left:8.33px;
+    
+    }
+    
+    #result-text{
+        font-size: 14.99px;
+    }
+
+    .discount-sub-txt{
+        font-size: 14.99px;
+     }
+
+    .money-amt{
+        font-size: 16.66px;
+        font-weight: 600;
+     }
+    
+}
