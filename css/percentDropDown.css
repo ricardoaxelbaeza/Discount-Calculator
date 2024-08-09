@@ -9,14 +9,15 @@
     height:24px;
     padding: 0 0 0 10px;
     border:0;
-    width: 65px;
     outline-width: 0;
     outline: none;
     -webkit-appearance: none;
 }
 
-option{
-    padding: 10px;
+select{
+    position: absolute;
+   left:-35px;
+   font-size: 12px;
 }
 
 .custom-select{
