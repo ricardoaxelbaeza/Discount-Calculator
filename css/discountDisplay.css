@@ -48,7 +48,7 @@
 
     50%{
         will-change: opacity, scale;
-        opacity: 0.5; scale:1.2;
+        opacity: 0.5; scale:1.05;
     }
 
     100%{
