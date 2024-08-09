@@ -89,21 +89,6 @@
 }
 
 
-#nav-curtain{
-    width: 100%;
-    height:100%;
-    position: fixed;
-    opacity: 1;
-    visibility: visible;
-    background: rgba(232,232,237,.4);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    visibility: hidden;
-    /* animation: slide 4s; */
-}
-
-
-
 @media only screen and (max-width:600px) {
     #hamburger-icon{
         display: block;
